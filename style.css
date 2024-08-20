@@ -48,3 +48,35 @@
 #next {
     right: -100px;
 }
+
+/*Thumbnails*/
+
+#thumbnails {
+    width: 700px;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#thumbnails img:hover {
+    filter: grayscale(0.5);
+    box-shadow: 0 0 10px goldenrod;
+    transform: translateY(-10px);
+}
+
+#thumbnails img {
+    height: 100%;
+    width: 19%;
+    border-radius: 10px;
+    filter: grayscale(1);
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+#thumbnails img.active {
+    filter: grayscale(0);
+    box-shadow: 0 0 10px dodgerblue;
+}
